@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en"><head><link href="/styles.css" rel="stylesheet" type="text/css"><link href="/recipe-public-modern.css" rel="stylesheet" type="text/css"></head><body><div class="wrapper"><header><div class="banner-pic"><a href="/" id="page-top"><img src="/header.svg"></a></div><div class="main-menu"><ul><li><a href="/category/blog/">Blog</a></li><li><a href="/category/fiction/">Fiction</a></li><li><a href="/photos/">Photos</a></li><li><a href="/category/recipes/">Recipes</a></li><li><a href="/about-us/">About Us</a></li></ul><a class="support-link" href="/support">❤</a></div></header><main><div><h1>Charging our house battery with our van’s alternator — Part 1</h1><div class="posted-by">Posted in <a href="/category/blog/">Blog</a> by Tom on May 12, 2020</div><div class="post-content">
+<p><strong>DISCLAIMER:</strong> I am an Amateur. Working with electricity — batteries in particular — is dangerous. While I take as many safety precautions as I can think of, I still make plenty of mistakes. In hindsight I’ve tried to highlight them below but if you see something I’ve done wrong please let me know! </p>
+
+
+
+<p>When we first set off in our van, Robin, one of the unfinished jobs was connecting our rear battery to the van’s <a data-id="https://en.wikipedia.org/wiki/Alternator_(automotive)" data-type="URL" href="https://en.wikipedia.org/wiki/Alternator_(automotive)" rel="noreferrer noopener" target="_blank">alternator</a>. While we could usually keep our battery topped up just from our rooftop solar, we wanted a backup plan that would still work on cloudy days.</p>
+
+
+
+<p>Rather than connect directly to the alternator, I decided a simpler strategy would be to connect up our rear battery to the front battery, which is already connected up to the alternator.</p>
+
+
+
+<p>I did some research online and came up with these options: </p>
+
+
+
+<ul><li>Manual switch<ul><li>A single physical switch, near the rear battery, that we’d need to switch on before driving and switch off when we stop</li></ul></li><li>Manual relay<ul><li>A small switch located anywhere (like in the cab!) that when flipped, opens and closes a second (larger) switch near the battery</li></ul></li><li>Voltage Sensitive Relay<ul><li>Similar to above, except the second switch is opened and closed automatically, depending on the voltage running to the battery</li><li>Usually set up so that the battery is only connected when the alternator is running</li></ul></li><li>Battery-to-battery charger<ul><li>A separate device plugged into both batteries that charges the rear battery using the front battery when it has a high enough voltage</li><li>This was the only option in our price range I could find<ul><li>https://www.supercheapauto.com.au/p/ridge-ryder-ridge-ryder-12v-20-amp-dc-dc-battery-charger/534585.html</li></ul></li></ul></li><li>Diode isolator<ul><li>I still don’t fully understand what these are and they seem expensive</li></ul><ul><li>https://www.victronenergy.com/battery-isolators-and-combiners/argo-diode-battery-isolators</li></ul></li></ul>
+
+
+
+<p>In the end I decided to got with option #1, the manual switch. It seemed the simplest and least likely to break.</p>
+
+
+
+<h2>Our house battery system (before)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-232" height="1024" loading="lazy" sizes="(max-width: 683px) 100vw, 683px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04032-777600-683x1024.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04032-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04032-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04032-777600-rotated.jpg 720w" width="683"></figure>
+
+
+
+<p>I’m planning on doing a full write-up of our battery/solar/12v system but for now, here’s a terribly lit photo!</p>
+
+
+
+<p>The main components are a 200Ah Ritar AGM battery, a 30A Victron solar charge controller, 350W of Sharp solar panels on the roof, a Victron battery monitor, various fuses, circuit breakers, bus bars (mostly Blue Sea) and (hopefully) the correct gauges of cable between everything.</p>
+
+
+
+<p><strong>Warning:</strong> I’ve installed our battery directly below an electrics panel which is a safety risk. An AGM battery like ours is designed to hold onto and  internally ‘recombine’ the combustible gases it produces but if we accidentally overcharge the battery (which is pretty easy to do with an alternator!) <a href="https://rvnerds.com/2017/11/01/electrical-myths-part-4-agm-batteries-dont-need-venting/">it could release them upwards</a> (hydrogen is lighter than air) and combined with a spark from the other electrics cause a fire/explosion. Our battery area is well ventilated but this is still a hazard I’m planning to fix when possible.</p>
+
+
+
+<h2>What was already connected?</h2>
+
+
+
+<p>Thankfully the hard work of running a high-amp cable from the front battery to the rear (our positive line) was already done. It was leftover from the previous build in our van. There was also a cable running through the floor and termination on the underside of the van’s chassis that we’ll use as our negative line.</p>
+
+
+
+<h2>What did we need to connect?</h2>
+
+
+
+<ul><li>In the back<ul><li>(+) side<ul><li>red lead in from the floor to a cut-off switch</li><li>cut-off switch to (+) bus</li></ul></li><li>(-) side<ul><li>black lead in from the floor to a junction block</li><li>from junction block to (-) bus</li></ul></li></ul></li><li>In the front<ul><li>(+) red cable in from a hole in the battery box to the pre-fuse box</li><li>install a fuse</li></ul></li></ul>
+
+
+
+<h2>Connecting up the the rear battery</h2>
+
+
+
+<p>Even though I wasn’t connecting anything up to the live system yet, my first move was to turn off the rear-battery isolating switch. I’d be working in the area and I didn’t want to accidentally cause a short circuit with dropped tool, or shock myself by doing something silly. This disconnected the battery from the bus (and so the rest of the circuit) but I’d still need to be careful around the battery terminals themselves.</p>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-230" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04030-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04030-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04030-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04030-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04030-777600.jpg 1080w" width="300"></figure>
+
+
+
+<p>Even though it was dark outside I also switched off the connection to the solar system, you never know! I checked that the main circuit didn’t have power running through it with a multi-meter. Placing the test leads on the battery terminals showed about 12ish volts and placing them on the positive and negative buses showed 0.7V. Shouldn’t it show 0V? Well, still  connected up to the main bus is a variety of 12v applications via a fuse block. I think it’s our USB charger that feeds back a bit of power. Ideally we would have a separate switch or breaker that could disconnect the whole block but I haven’t installed one yet and it should be safe to work with such low power in the system.</p>
+
+
+
+<h2>Connecting the van chassis to the negative bus</h2>
+
+
+
+<p>In order for power to flow from the front battery/alternator circuit to the rear battery circuit, I’d need a positive line and a negative line. It seems common in automotive electrics to use the chassis of the vehicle itself as the negative line to save cable. So the front battery’s negative terminal is already connected to the van chassis.</p>
+
+
+
+<p>There was also a black 2G lead bolted to the underside of the van by the previous owner that very helpfully popped up through the floor next to our rear electric system. It also very unhelpfully didn’t quite reach our negative bus. So I purchased a ‘Bussmann Stud Type Junction Block’ from <a href="https://12volt.com.au/">The 12 Volt Shop</a>. That way I could run the existing lead to the junction block, then another small lead to the negative bus.</p>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-272" height="683" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04094-777600-1024x683.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04094-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04094-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04094-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04094-777600.jpg 1080w" width="1024"></figure>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-231" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04031-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04031-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04031-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04031-777600-rotated.jpg 720w" width="200"><figcaption>(+) and (-) cables coming out of the floor. (+) cable goes under the van all the way to the front battery and (-) cable to the underside of the van chassis</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-234" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04038-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04038-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04038-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04038-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04038-777600.jpg 1080w" width="300"><figcaption>Junction block for extending the (-) lead</figcaption></figure>
+</div>
+</div>
+
+
+
+<p>I played around with a few locations for the junction and ended up settling on the position shown in the photo. I found a couple of screws that looked like they’d go deep enough into the wall (without going through) and screwed it into place.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-233" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04036-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04036-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04036-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04036-777600-rotated.jpg 720w" width="200"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-235" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04039-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04039-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04039-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04039-777600-rotated.jpg 720w" width="200"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-237" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04041-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04041-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04041-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04041-777600-rotated.jpg 720w" width="200"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-236" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04040-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04040-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04040-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04040-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04040-777600.jpg 1080w" width="300"></figure>
+</div>
+</div>
+
+
+
+<p>Rather than go upwards to the negative bus, the simplest way to connect up the negative line seemed to be horizontally across to the battery shunt, which connects straight up to the negative bus anyway. This also let me re-use the big M12 lug on the end of some spare black 2G cable.</p>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-238" height="683" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04042-777600-1024x683.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04042-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04042-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04042-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04042-777600.jpg 1080w" width="1024"></figure>
+
+
+
+<p>I put a loose 35-6 lug onto the junction, lined up the cable, marked it so it’d be just long enough to make the distance and cut it with our trusty Wiss snips.</p>
+
+
+
+<p>I crimped the 35-6 lug onto the cable. In ‘Connecting the positive line’ below I go into the crimping / heatshrinking process in more detail.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-239" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04043-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04043-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04043-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04043-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04043-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-240" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04044-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04044-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04044-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04044-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04044-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-241" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04046-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04046-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04046-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04046-777600-rotated.jpg 720w" width="200"></figure>
+</div>
+</div>
+
+
+
+<p>And the negative line is done!</p>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-243" height="683" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04048-777600-1024x683.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04048-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04048-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04048-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04048-777600.jpg 1080w" width="1024"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-242" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04047-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04047-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04047-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04047-777600-rotated.jpg 720w" width="200"><figcaption>Where I connected up to the battery shunt (before tightening). I think that’s the right washer order.</figcaption></figure>
+
+
+
+<h2>Connecting the positive line</h2>
+
+
+
+<p>On the back of the cut-off switch are two M10 posts, meaning I would need lugs with 10mm holes to fit over them. The positive lead coming in from the floor already had an M8 lug on it and I didn’t have a lot of cable to work with… so in the interest of keeping the positive lead as long as possible and saving a lug I decided to drill out a few mm of the M8 lug so it could fit.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="35-10 lug over a 35-8 lug" class="wp-image-216" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04012-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04012-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04012-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04012-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04012-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-217" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04013-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04013-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04013-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04013-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04013-777600.jpg 1080w" width="300"><figcaption>This was a terrible idea</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-218" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04015-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04015-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04015-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04015-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04015-777600.jpg 1080w" width="300"><figcaption>Hmmmm</figcaption></figure>
+</div>
+</div>
+
+
+
+<p>It went pretty badly. It was really difficult to drill out, super dangerous (I didn’t have any clamps, let alone a vice) and in the end, a waste of time. It seems pretty silly in hindsight but I didn’t think about the fact I’d be taking off the outside coating (tin?) of the lug that I assume is there to prevent corrosion.</p>
+
+
+
+<p>So I decided to snip off the lug and replace it with a properly fitting 35-10.</p>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-225" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04023-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04023-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04023-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04023-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04023-777600.jpg 1080w" width="300"><figcaption>I wrote down a little quick-reference of wire gauges and rough Amperage ratings / crimper size. Every cable is different, check the details from the manufacturer!</figcaption></figure>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-219" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04017-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04017-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04017-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04017-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04017-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-222" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04020-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04020-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04020-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04020-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04020-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-227" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04025-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04025-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04025-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04025-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04025-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-220" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04018-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04018-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04018-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04018-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04018-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-223" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04021-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04021-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04021-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04021-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04021-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-228" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04026-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04026-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04026-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04026-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04026-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-221" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04019-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04019-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04019-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04019-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04019-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-226" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04024-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04024-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04024-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04024-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04024-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-229" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04029-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04029-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04029-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04029-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04029-777600.jpg 1080w" width="300"></figure>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<p>To finish connecting up the positive line I needed to find a good place to connect up to the positive bus. Everything reached each other best when I connected to the farthest right post but it felt dangerously close to the leftmost negative lead.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-244" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04049-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04049-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04049-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04049-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04049-777600.jpg 1080w" width="300"><figcaption>I assumed it doesn’t matter which way round these connections went, the switch just opens and closes the circuit, right?</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-247" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04057-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04057-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04057-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04057-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04057-777600.jpg 1080w" width="300"><figcaption>I didn’t like these lugs being so close, a short-circuit waiting to happen!</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-246" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04056-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04056-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04056-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04056-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04056-777600.jpg 1080w" width="300"><figcaption>Better spacing!</figcaption></figure>
+</div>
+</div>
+
+
+
+<p>In the end, mounting the switch on a block seemed the best option. It kept the (+) leads away from the (-) ones and allowed the horizontal cable to reach a clear space on the (+) bus.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-250" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04060-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04060-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04060-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04060-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04060-777600.jpg 1080w" width="300"><figcaption>The red cable in the center reaching desperately for the positive bus</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-251" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04062-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04062-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04062-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04062-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04062-777600.jpg 1080w" width="300"><figcaption>This Blue Sea switch lets you pop out the panels on any side</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-254" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04066-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04066-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04066-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04066-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04066-777600.jpg 1080w" width="300"></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-253" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04064-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04064-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04064-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04064-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04064-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-257" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04074-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04074-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04074-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04074-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04074-777600.jpg 1080w" width="300"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-256" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04073-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04073-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04073-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04073-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04073-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-258" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04075-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04075-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04075-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04075-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04075-777600.jpg 1080w" width="300"></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-260" height="300" loading="lazy" sizes="(max-width: 200px) 100vw, 200px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04077-777600-200x300.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04077-777600-200x300.jpg 200w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04077-777600-683x1024.jpg 683w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04077-777600-rotated.jpg 720w" width="200"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-255" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04067-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04067-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04067-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04067-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04067-777600.jpg 1080w" width="300"><figcaption>Countersinks, so the screws will sit flush</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-259" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04076-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04076-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04076-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04076-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04076-777600.jpg 1080w" width="300"></figure>
+</div>
+</div>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-261" height="683" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04080-777600-1024x683.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04080-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04080-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04080-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04080-777600.jpg 1080w" width="1024"></figure>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<p>And that’s the back of the van done! Only problem left was the plastic guard on the (+) bus bar didn’t sit flush any more. I’ll fix that by cutting a chunk out of it with snips later.</p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-medium"><img alt="" class="wp-image-262" height="200" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04081-777600-300x200.jpg" srcset="https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04081-777600-300x200.jpg 300w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04081-777600-1024x683.jpg 1024w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04081-777600-768x512.jpg 768w, https://wp.tomisme.com/wp-content/uploads/2020/05/DSC04081-777600.jpg 1080w" width="300"></figure>
+</div>
+</div>
+
+
+
+<p>In Part 2 we’ll connect up to the front battery!</p>
+</div></div></main><footer><p><a href="#page-top">Jump back to top</a></p><p>Thanks for visiting 😃</p><p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="{:border-width 0}"></a><p>This page is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p><p>That means it's free to read, share, adapt and reproduce
+      for non-commercial purposes, as long as any reproductions
+      are also released under the same license, and you give credit.</p></p></footer></div></body></html>
